@@ -45,34 +45,67 @@
         width: 120px;
         font-size: 20px;
       }
+      img{
+        width: 150px;
+        height: 200px;
+      }
+      #list{
+        background-color: #f5d9d9;
+        width: 50%;
+      }
+      #pay{
+        width: 20%;
+      }
+      #remove{
+        width: 20%;
+      }
     </style>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
   </head>
 
   <body style="background-color: rgb(255, 241, 220);">
     <div class="container">
-      <div class="row d-flex justify-content-center">
-        <h1>Welcome to Our Online Shop</h1>
-      <div class="row d-flex justify-content-center">
-        <p>Explore our collection of unique and trendy products </p>
-      </div>
-      <div class="row d-flex justify-content-center">
-          <a id="button" href="./login.html" class="btn btn-primary">Shop Now</a>
-      </div>
-      <div class="row  d-flex justify-content-center" style="height: 50%; width: 50%;">
-        <img class="m-4 rounded-5"src="static/shop1.png" alt="Shop">
-      </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light rounded-4">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Shop</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="./mainshop.html">
+                      <button class="btn btn-outline-info">
+                        Shop
+                      </button>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <button id="logout" class="btn btn-outline-danger">
+                        Logout
+                      </button>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
 
-      <footer class="bg-light text-center text-lg-start">
-        <div class="text-center">
-          © 2023 Copyright
-        </div>
-      </footer>
-      
+          <div class="row d-flex justify-content-center">
+            <div id="list" class="m-3 rounded-5"></div>
+            <p id="sum">Total sum: </p>
+          </div>
+          <div class="row d-flex justify-content-center">
+            <button id="pay" type="button" class="btn btn-outline-success m-2 ">payment</button>
+            <button id="remove" type="button" class="btn btn-outline-danger m-2">remove all items</button>
+          </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="cart.js" type="module"></script>
   </body>
+
 
 </html>
