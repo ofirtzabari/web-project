@@ -1,6 +1,8 @@
-#Shop
+# Shop
 
-link : https://myshop-6c6b0.web.app/
+## link : https://myshop-6c6b0.web.app/
+
+### First assignment in the WEB world, basic javascript html and css
 
 frameworks and librarys:
     firebase,
